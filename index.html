@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>study_collage</title>
 </head>
+
 <body>
-   <section class="header">
+    <section class="header">
         <nav>
             <a href="index.html"><img src="image/logo.png"></a>
             <div class="nav-link">
+                <i class="fa fa-times" onclick="hideMeanu"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -20,8 +28,26 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMeanu"></i>
         </nav>
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quam. consequatur nihil ut neque corrupti <br> voluptatem accusamus, eligendi recusandae minima.</p><br>
+            <a href="" class="hero-btn">Visit to know more</a>
+        </div>
 
-   </section> 
+    </section>
+
+<!-- --------------javascript for toggle meanu--------- -->
+    <script>
+        var nvlink=document.getElementById("nav-link");
+        function showMeanu(){
+            navlink.style.right="0";
+        }
+        function hideMeanu(){
+            navlink.style.right="-200px";
+        }
+    </script>
 </body>
+
 </html>
