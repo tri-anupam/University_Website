@@ -320,9 +320,15 @@ h3{
     font-weight: 600;
 }
 .about{
-    display: block ruby;
+    
 }
 .icon .fa{
+    color: red;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.icon .fab{
     color: red;
     margin: 0 13px;
     cursor: pointer;
